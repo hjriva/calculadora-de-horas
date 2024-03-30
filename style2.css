@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+.DoubleDigitInput {
+    width: 15px;
+    
+    }
+    
+.FourDigitInput {
+        width: 35px;
+    }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+ 
+  }
+
+  
+
