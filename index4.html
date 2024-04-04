@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de horas</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="pill_1f48a.png" type="image/x-icon">
 </head>
 <body>
+
+    <section>
     Exibir 
     
-    <input type="number" name="" id="IntervalosNum" class="DoubleDigitInput"> intervalos 
-    de <input type="number" id="horasInt" class="FourDigitInput" placeholder="ex.: 8"> horas
-    para os próximos <input type="number" id="numdias" placeholder="ex.: 7" class="FourDigitInput"> dias,
+    <input type="number" id="IntervalosNum" class="DoublePlusDigitInput"> intervalos 
+    de <input type="number" id="horasInt" class="DoublePlusDigitInput" > horas
+    para os próximos <input type="number" id="numdias"  class="DoublePlusDigitInput"> dias,
     
     contando desde 
    <input type="number" id="dia" class="DoubleDigitInput"> / <input type="number" id="mes" class="DoubleDigitInput"> / 
    <input type="number" id="ano" class="FourDigitInput"> às 
    <input type="number" id="hora" class="DoubleDigitInput">:<input type="number" id="minuto" class="DoubleDigitInput">
    <input type="button" value="Calcular" id="calcular">
-   <div id="show"></div>
+   <div id="show">
+    <ul id="lista"></ul>
+   </div>
+</section>
 </body>
 
 <script src="script4.js"></script>

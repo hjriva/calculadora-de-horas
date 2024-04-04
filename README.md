@@ -9,3 +9,4 @@ Referências utilizadas:
 * https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
 * https://stackoverflow.com/questions/7609130/set-the-default-value-of-an-input-field
 * https://stackoverflow.com/questions/18510845/maxlength-ignored-for-input-type-number-in-chrome
+* https://www.geeksforgeeks.org/how-to-creating-html-list-from-javascript-array/

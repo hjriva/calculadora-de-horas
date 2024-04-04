@@ -58,13 +58,21 @@ var TestFor = function () {
         return i < IntervNum
     } else if (IntervNum == 0) {
         return i <= CalcTest
+    } else if (NumDias != 0 && IntervNum != 0) {
+        return i < IntervNum
     }
 }
 
 
 //((limit2 - AgoraFreq) / 3600000) / FreqNum
 
-alert(QuantosIntervalos())
+
+
+if (FreqNum == 0) {
+    window.document.getElementById('show').innerHTML = 'Por favor, preencha o campo obrigatório!'
+    window.document.getElementById('show').style.color = 'red'
+    window.document.getElementById('horasInt').style.borderColor = 'red'
+} else {
 
 for (var i = 1; TestFor() ; i ++) {
 
@@ -82,14 +90,29 @@ for (var i = 1; TestFor() ; i ++) {
     }
 
    
+    window.document.getElementById('show').style.color = 'inherit'
+    window.document.getElementById('horasInt').style.borderColor = 'inherit'
 
+    const list = document.getElementById("lista");
 
-    let str =  Intervalos.join("<br> ")
-    window.document.getElementById('show').innerHTML = str
+    Intervalos.forEach((item) => {
+            let li = document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
+        })
 
+    window.document.getElementById('show').style.display = 'block'
+
+    //let str =  Intervalos.join("<br> ")
+   // window.document.getElementById('show').innerHTML = str
+}
 
 
 
 
     
+})
+
+window.document.getElementById('horasInt').addEventListener('input', function() {
+    this.style.borderColor = 'inherit'
 })
