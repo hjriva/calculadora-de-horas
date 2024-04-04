@@ -85,7 +85,7 @@ for (var i = 1; TestFor() ; i ++) {
 
 
     let str =  Intervalos.join("<br> ")
-    document.write(str)
+    window.document.getElementById('show').innerHTML = str
 
 
 
