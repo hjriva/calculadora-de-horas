@@ -89,10 +89,56 @@ input[type=number] {
 .ColumnList {
     display: grid;
     grid-template-columns: auto auto;
+    column-gap: 15px;
+    
+
+
     
   
   
   
+}
+
+@media screen and (max-width: 500px) {
+    .ColumnList {
+        display: block
+        
+    
+    
+        
+      
+      
+      
+    }
+}
+
+@media screen and (max-width: 200px) {
+    section {
+        background-color: inherit;
+        font-size: 13px;
+        text-align: center;
+        
+    }
+    input {
+        font-size: 15px;
+    }
+    .DoubleDigitInput {
+        width: 15px;
+        
+        }
+    
+        .DoublePlusDigitInput {
+            width: 25px;
+            
+            }
+        
+    .FourDigitInput {
+            width: 35px;
+        }
+
+        input[type=button] {
+            background-color: #6d8197;
+        }
 }
 
 
