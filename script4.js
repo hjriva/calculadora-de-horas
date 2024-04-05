@@ -14,16 +14,13 @@ var CurrentDate = new Date()
 
 window.document.getElementById('calcular').addEventListener('click', function () {
     if (window.document.getElementById('show').style.display == 'block') {
-        this.innerHTML = " "
-    }
+        this.innerHTML = " "}
 const HorAgora = window.document.getElementById("hora").value.toString().padStart(2,'0')
 const MinAgora = window.document.getElementById("minuto").value.toString().padStart(2,'0')
 const DiaAgora = window.document.getElementById("dia").value.toString().padStart(2,'0')
 const MesAgora = window.document.getElementById("mes").value.toString().padStart(2,'0')
 const AnoAgora = window.document.getElementById("ano").value.toString()
-
 const agora = new Date(`${AnoAgora}-${MesAgora}-${DiaAgora}T${HorAgora}:${MinAgora}:00`)
-
 const dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"]
 const diadaSemana = dias[agora.getDay()]
 
@@ -31,32 +28,12 @@ const AgoraFreq = agora.getTime()
 const FreqNum = Number(window.document.getElementById('horasInt').value)
 const Freq = FreqNum  * 3600000
 const NumDias = Number(window.document.getElementById('numdias').value) * 86400000
-
-
 const limit = AgoraFreq + NumDias
 const DataLimite = new Date(limit)
-//alert(limit)
-//alert (DataLimite)
-
 var limit2 = DataLimite.getTime()
-
-
 const Intervalos = [`${diadaSemana}, ${DiaAgora}/${MesAgora}/${AnoAgora}, ${HorAgora}:${MinAgora}`]
-
 const IntervNum = Number(window.document.getElementById('IntervalosNum').value)
-
 var CalcTest = ((limit2 - AgoraFreq) / 3600000) / FreqNum
-
-
-//alert(IntervNum)
-
-/*var QuantosIntervalos = function Test () {
-    if (NumDias == 0) {
-        return IntervNum 
-    } else if (IntervNum == 0) {
-        return CalcTest
-    }
-}*/
 
 var TestFor = function () {
     if (NumDias == 0) {
@@ -67,12 +44,6 @@ var TestFor = function () {
         return i < IntervNum
     }
 }
-
-
-
-//((limit2 - AgoraFreq) / 3600000) / FreqNum
-
-
 
 if (FreqNum == 0) {
     window.document.getElementById('show').innerHTML = 'Por favor, preencha o campo obrigatório!'
@@ -108,25 +79,11 @@ for (var i = 1; TestFor() ; i ++) {
             }}
 
     window.document.getElementById('show').innerHTML = ul()
-
-   
     window.document.getElementById('show').style.color = 'inherit'
     window.document.getElementById('horasInt').style.borderColor = 'inherit'
     
-    
-
-    //window.document.getElementById('show').style.display = 'block'
-    //window.document.getElementById('show').innerHTML = `${list}`
-
-    //let str =  Intervalos.join("<br> ")
-   // window.document.getElementById('show').innerHTML = str
-}
-
-
-
-
-    
-})
+   
+}})
 
 window.document.getElementById('horasInt').addEventListener('input', function() {
     this.style.borderColor = 'inherit'

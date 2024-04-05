@@ -13,30 +13,22 @@ section {
     color: #ffffff;
     padding: 10px;
     border-radius: 8px 8px 0px 0px;
-    height: fit-content;
- 
-    
-    
+    height: fit-content; 
 }
-
-
 
 input {
     padding: 4px;
     background-color: #6d8197;
     color: #ffffff;
-    margin: 8px 5px 2px 5px;
-    
+    margin: 8px 5px 2px 5px; 
 }
-
-
 
 .DoubleDigitInput {
     width: 25px;
     
     }
 
-    .DoublePlusDigitInput {
+.DoublePlusDigitInput {
         width: 35px;
         
         }
@@ -54,27 +46,25 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
     text-align: center;
-    
     border: solid 2px white;
     border-radius: 3px;
-    
- 
+
   }
 
-  input[type=button] {
+input[type=button] {
     border-radius: 8px ;
     border: none;
     background-color: #004492;
   }
 
-  input[type=button]:hover {
+input[type=button]:hover {
    background-color: #6d8197;
    cursor: pointer;
   }
 
 
   
-  li {
+li {
     margin: 7px;
     
   }
@@ -90,53 +80,40 @@ input[type=number] {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 15px;
-    
-
-
-    
-  
-  
-  
 }
 
 @media screen and (max-width: 500px) {
     .ColumnList {
         display: block
-        
-    
-    
-        
-      
-      
-      
+
     }
 }
 
 @media screen and (max-width: 200px) {
-    section {
+section {
         background-color: inherit;
         font-size: 13px;
         text-align: center;
         
     }
-    input {
+input {
         font-size: 15px;
     }
-    .DoubleDigitInput {
+.DoubleDigitInput {
         width: 15px;
         
         }
     
-        .DoublePlusDigitInput {
+.DoublePlusDigitInput {
             width: 25px;
             
             }
         
-    .FourDigitInput {
+.FourDigitInput {
             width: 35px;
         }
 
-        input[type=button] {
+input[type=button] {
             background-color: #6d8197;
         }
 }
