@@ -10,6 +10,8 @@ var CurrentDate = new Date()
             document.getElementById("mes").value = mes
             document.getElementById("ano").value = ano
 
+            
+
 window.document.getElementById('calcular').addEventListener('click', function () {
     if (window.document.getElementById('show').style.display == 'block') {
         this.innerHTML = " "
@@ -48,13 +50,13 @@ var CalcTest = ((limit2 - AgoraFreq) / 3600000) / FreqNum
 
 //alert(IntervNum)
 
-var QuantosIntervalos = function Test () {
+/*var QuantosIntervalos = function Test () {
     if (NumDias == 0) {
         return IntervNum 
     } else if (IntervNum == 0) {
         return CalcTest
     }
-}
+}*/
 
 var TestFor = function () {
     if (NumDias == 0) {
@@ -65,6 +67,7 @@ var TestFor = function () {
         return i < IntervNum
     }
 }
+
 
 
 //((limit2 - AgoraFreq) / 3600000) / FreqNum
@@ -93,11 +96,18 @@ for (var i = 1; TestFor() ; i ++) {
     
     }
 
-    const ul = `<ul>${Intervalos.map(Intervalos =>
+    const ul = function () {
+        if (Intervalos.length <= 15) {
+    return `<ul>${Intervalos.map(Intervalos =>
         `<li>${Intervalos}</li>`).join('')}
               </ul>`;
+            } else { 
+                return `<ul class="ColumnList">${Intervalos.map(Intervalos =>
+        `<li>${Intervalos}</li>`).join('')}
+              </ul>`;
+            }}
 
-    window.document.getElementById('show').innerHTML = ul
+    window.document.getElementById('show').innerHTML = ul()
 
    
     window.document.getElementById('show').style.color = 'inherit'

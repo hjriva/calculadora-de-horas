@@ -3,6 +3,7 @@
 * fonte da imagem do favicon: https://emojipedia.org/pill
 
 Referências utilizadas:
+* https://stackoverflow.com/questions/6509106/is-there-a-way-to-break-a-list-into-columns
 * https://www.geeksforgeeks.org/how-to-creating-html-list-from-javascript-array/
 * https://stackoverflow.com/questions/27267565/javascript-returning-incorrect-date-from-an-input-type-date
 * https://stackoverflow.com/questions/43926138/getday-code-showing-wrong-day-javascript
