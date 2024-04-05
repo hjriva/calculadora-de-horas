@@ -10,14 +10,18 @@ body {
 
 section {
     background-color: #446994 ;
-    color: #ffffff
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    height: fit-content;
+    
 }
 
 input {
     padding: 4px;
     background-color: #6d8197;
     color: #ffffff;
-    margin: 0px 3px 0px 3px;
+    margin: 2px 3px 2px 3px;
     
 }
 
@@ -62,16 +66,6 @@ input[type=number] {
   input[type=button]:hover {
    background-color: #6d8197;
    cursor: pointer;
-  }
-
-  section {
-   
-    padding: 10px;
-    border-radius: 8px 8px 0px 0px;
-  }
-
-  #show {
-    display: none;
   }
 
 
